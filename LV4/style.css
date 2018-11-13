@@ -1,0 +1,18 @@
+html {
+    background-color: lightblue;
+    color: white;
+}
+
+header,footer,nav,main {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+nav,main {
+    background-color: orange;
+}
+
+header,footer {
+    background-color: lightcoral;
+}
