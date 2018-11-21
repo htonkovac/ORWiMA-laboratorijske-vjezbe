@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<Button
+    android:id="@+id/btnInspiration"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivFirstPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/ivSecondPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/ivThirdPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<TextView
+    android:id="@+id/tvHeaderText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/header_title"
+    android:textColor="@color/colorAccent"
+    android:textSize="@dimen/textSize"
+    android:background="#aceace"
+    />
+
+    <EditText
+        android:id="@+id/etEnterName"
+        android:layout_below="@id/tvHeaderText"
+        android:hint="@string/name_hint"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnWriteSmtng"
+        android:layout_below="@id/etEnterName"
+        android:text="Write smtnm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:onClick="myClick"/>
+    <EditText
+        android:id="@+id/etEnterAge"
+        android:layout_below="@id/ivImage"
+        android:hint="@string/enter_your_age"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnCalcSmtng"
+        android:layout_below="@id/etEnterAge"
+        android:text="Calculate smtng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:visibility="visible"
+        android:layout_below="@id/etEnterName"
+        android:layout_toRightOf="@id/btnWriteSmtng"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
